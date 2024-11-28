@@ -1,8 +1,11 @@
 <h1>Pizzeria</h1>
 
-<h2>Lista pizze</h2>
-
-<app-liste-pizze [pizze]="pizze" (pizzaSelezionata)="onPizzaSelezionata($event)"></app-liste-pizze>
-
-
-<app-pizza [pizza]="pizzaSelezionata"></app-pizza>
+<div class="Pizzeria">
+    <div class="listaPizze">
+        <h2>Lista pizze</h2>
+        
+        <app-liste-pizze [listaPizze]="pizze" (pizzaSelezionata)="onPizzaSelezionata($event)"></app-liste-pizze>
+    </div>
+    
+    <app-pizza class="pizza" [pizza]="pizzaSelezionata"></app-pizza>
+</div>

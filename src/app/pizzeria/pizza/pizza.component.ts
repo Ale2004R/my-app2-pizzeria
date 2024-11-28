@@ -9,7 +9,15 @@ import { Component, Input } from '@angular/core';
 })
 
 export class PizzaComponent {
-  @Input() pizza: { name: string, ingredients: string[], price: number } | null = null;
+  @Input() pizza!: { 
+    name: string, 
+    ingredients: string[], 
+    price: number,
+    src: string
+  };
 
-  console.log(pizza);
+  onClose() {
+    let none = document.querySelector('.pizza');
+    none?.classList.add('none');
+  }
 }

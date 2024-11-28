@@ -1,1 +1,6 @@
-<p>pizza works!</p>
+<div class="pizza none">
+    <img [src]="pizza.src" [alt]="pizza.name">
+    <h2>{{ pizza.name }} - {{ pizza.price }}€</h2>
+    <p>{{ pizza.ingredients.join(', ') }}</p>
+    <button (click)="onClose()"> X </button>
+</div>

@@ -1,0 +1,19 @@
+.Pizzeria {
+    display: flex; /* Abilita Flexbox */
+    gap: 20px; /* Spaziatura tra gli elementi */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    align-items: flex-start; /* Allinea gli elementi in alto */
+}
+
+.listaPizze {
+    flex: 1; /* Occupa una porzione flessibile dello spazio */
+}
+
+.listaPizze h2 {
+    text-align: center;
+}
+
+.pizza {
+    flex: 1; /* Occupa una porzione flessibile dello spazio */
+    max-width: 55%; /* Limita la larghezza massima */
+}
