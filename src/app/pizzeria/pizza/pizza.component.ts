@@ -17,7 +17,7 @@ export class PizzaComponent {
   };
 
   onClose() {
-    let none = document.querySelector('.pizza');
+    let none = document.querySelector('.piz');
     none?.classList.add('none');
   }
 }
