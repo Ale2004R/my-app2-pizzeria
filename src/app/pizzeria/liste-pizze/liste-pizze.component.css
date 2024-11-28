@@ -1,0 +1,19 @@
+li {
+    list-style: none;
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+button{
+    border-radius: 30px;
+    color: white;
+    background-color: blue;
+    width: 100%;
+}
+
+li, button {
+    text-align: center;
+    padding: 10px;
+}
